@@ -1,0 +1,66 @@
+{
+  "settings": {
+    "logEnabled": true
+  },
+  "obs": {
+    "password": "",
+    "url": "ws://127.0.0.1:4444",
+    "scenes": [
+      "BackCamera",
+      "FrontCamera",
+      "Slide",
+      "PreacherSlide",
+      "Music"
+    ],
+    "audio": {
+      "sources": [
+        "Desktop",
+        "Mixer"
+      ],
+      "settings": [
+        {
+          "name": "MixerOnly",
+          "volumes": [
+            0,
+            2
+          ]
+        },
+        {
+          "name": "MixerAboveDesktop",
+          "volumes": [
+            2,
+            1
+          ]
+        },
+        {
+          "name": "DesktopOnly",
+          "volumes": [
+            2,
+            0
+          ]
+        },
+        {
+          "name": "Mute",
+          "volumes": [
+            0,
+            0
+          ]
+        }
+      ],
+      "volumeLevels": [
+        -100,
+        -40,
+        -20,
+        -5,
+        0
+      ]
+    }
+  },
+  "midi": {
+    "portName": "loopMIDI Port",
+    "channels": [
+      "Scene",
+      "Audio"
+    ]
+  }
+}
