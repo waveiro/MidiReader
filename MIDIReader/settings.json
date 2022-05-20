@@ -1,6 +1,7 @@
 {
   "settings": {
-    "logEnabled": true
+    "logEnabled": false,
+    "secondsToChangeScene": 30
   },
   "obs": {
     "password": "",

@@ -17,7 +17,10 @@ namespace MIDIReader.Configuration
     public class GeneralSettingsJson
     {
         [JsonProperty(PropertyName = "logEnabled")]
-        public bool LogEnabled { get; set; }
+        public bool LogEnabled { get; set; }        
+        
+        [JsonProperty(PropertyName = "secondsToChangeScene")]
+        public int SecondsToChangeScene { get; set; }
     }
 
     public class ObsSettingsJson
