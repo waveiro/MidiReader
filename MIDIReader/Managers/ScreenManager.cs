@@ -71,7 +71,7 @@ namespace MIDIReader.Managers
 
         private void RemoveLastTimer()
         {
-            if (_timers.TryPop(out var timerToDispose))
+            while (_timers.TryPop(out var timerToDispose))
             {
                 timerToDispose.Stop();
                 timerToDispose.Dispose();
